@@ -1,0 +1,221 @@
+/* ini biar semua elemen nggak aneh ukurannya + font jadi konsisten */
+* {
+        box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+             margin: 0;
+        padding: 0;
+    }
+
+/* background utama biar nggak putih polos banget */
+body {
+        background-color: #f8f9fa;
+            color: #333;
+        line-height: 1.6;
+    }
+
+/* header atas sekolah, biar keliatan kayak website beneran */
+.header-sekolah {
+        background-color: #0c2461;
+            color: white;
+            padding: 20px;
+        text-align: center;
+    }
+
+/* judul sekolah biar ada jarak dikit dari teks bawahnya */
+    .logo-container h1 {
+            margin-bottom: 5px;
+        }
+
+/* navbar list biar nggak ada bullet titik-titik */
+    nav ul {
+        list-style: none;
+        margin-top: 15px;
+    }
+
+/* bikin menu sejajar ke samping */
+        nav ul li {
+            display: inline;
+             margin: 0 15px;
+        }
+
+/* link menu biar keliatan stylish warna emas soft */
+            nav ul li a {
+                color: #f8c291;
+                    font-weight: bold;
+                text-decoration: none;
+            }
+
+/* kalau disentuh cursor, jadi ada garis bawah */
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+/* wadah utama biar konten nggak nempel pinggir layar */
+    .container {
+        margin: 30px auto;
+            max-width: 1000px;
+        padding: 0 20px;
+    }
+
+/* kotak info pembuka biar kayak card juga */
+    .info-section {
+        background: white;
+            border-left: 5px solid #0c2461;
+                border-radius: 8px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        margin-bottom: 25px;
+        padding: 20px;
+    }
+
+/* biar form dan hasilnya bisa berdampingan */
+    .content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+/* kotak form dan output biar kayak card modern */
+    .form-container,
+    .output-container {
+        background: white;
+            border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+             flex: 1;
+             min-width: 300px;
+        padding: 25px;
+    }
+
+/* jarak antar input */
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+/* label biar keliatan jelas dan tegas */
+    label {
+        display: block;
+            font-size: 14px;
+                 font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+/* input biar rapi dan full lebar */
+    input,
+    select {
+        border: 1px solid #ccc;
+             border-radius: 4px;
+            padding: 10px;
+        width: 100%;
+    }
+
+/* tombol utama form */
+    button {
+        background-color: #38ada9;
+            border: none;
+             border-radius: 4px;
+        color: white;
+            cursor: pointer;
+                font-weight: bold;
+                    padding: 12px;
+                transition: 0.3s;
+        width: 100%;
+    }
+
+/* efek hover biar tombol hidup */
+    button:hover {
+        background-color: #079992;
+    }
+
+/* kalau error disembunyiin */
+    .error-hidden {
+        display: none;
+    }
+
+/* kalau error muncul, ini stylingnya */
+    .error-visible {
+         color: #e55039;
+            display: block;
+                font-size: 13px;
+            font-weight: bold;
+        margin-top: 10px;
+    }
+
+/* kartu siswa utama */
+    .card-siswa {
+        background: white;
+            border: 2px solid #ddd;
+                border-radius: 8px;
+             margin-bottom: 10px;
+        padding: 12px;
+        transition: 0.3s;
+        font-size: 14px;
+    }
+
+/* nama siswa biar lebih stand out */
+    .card-siswa h4 {
+        color: #000;
+        margin-bottom: 5px;
+    }
+
+/* isi teks di card */
+    .card-siswa p {
+        color: #000;
+    }
+
+/* tombol delete kecil di card */
+    .hapus-btn {
+        margin-top: 8px;
+            padding: 6px 10px;
+            font-size: 12px;
+                 background: #000;
+                 color: white;
+            border: none;
+            border-radius: 5px;
+        cursor: pointer;
+    }
+
+/* biar ada efek dikit kalau disentuh */
+    .hapus-btn:hover {
+        opacity: 0.8;
+    }
+
+/* kalau belum ada data, teks ini yang muncul */
+    .empty-list {
+        color: #747d8c;
+            font-style: italic;
+            margin-top: 20px;
+        text-align: center;
+    }
+
+/* footer paling bawah */
+    .footer-sekolah {
+        background-color: #0c2461;
+         color: white;
+            margin-top: 40px;
+         padding: 20px;
+        text-align: center;
+    }
+
+/* ========================= */
+/* WARNA EKSKUL (biar card beda-beda) */
+/* ========================= */
+
+/* coding = biru muda */
+    .coding {
+        background-color: #dff6ff;
+            border: 2px solid #74b9ff;
+        box-shadow: 0 4px 10px rgba(116, 185, 255, 0.2);
+    }
+
+/* jurnalistik = hijau toska */
+    .jurnalistik {
+        background-color: #e6fffa;
+            border: 2px solid #1abc9c;
+        box-shadow: 0 4px 10px rgba(26, 188, 156, 0.2);
+    }
+
+/* pmr = merah soft */
+    .pmr {
+        background-color: #ffe6e6;
+            border: 2px solid #ff6b6b;
+        box-shadow: 0 4px 10px rgba(255, 107, 107, 0.2);
+    }
